@@ -23,3 +23,27 @@ body {
     border-radius: 0.6em;
     box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2); 
 }
+
+.search-container input,
+.search-container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.search-container input{
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 0.7em;
+    color: #ffff;
+}
+
+.search-container input:focus {
+    border-color: #ffff;
+}
+
+.search-container button {
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
