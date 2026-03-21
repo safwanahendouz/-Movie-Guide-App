@@ -26,7 +26,7 @@ body {
 
 .search-container input,
 .search-container button {
-    font-size: 0.9em;
+    font-size: 1em;
     outline: none;
     border-radius: 0.3em;
 }
@@ -46,4 +46,6 @@ body {
     background-color: #ffb92a;
     border: none;
     cursor: pointer;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
