@@ -1,3 +1,4 @@
+// script.js
 // Initial References
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
@@ -6,7 +7,7 @@ let result = document.getElementById("result");
 // Function to fetch data from API
 let getMovie = () => {
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
     // If input field is empty
     if (movieName.length <= 0) {
         result.innerHTML = `<h3 class="msg">Please Enter A Movie Name</h3>`;
@@ -23,7 +24,7 @@ let getMovie = () => {
                             <div>
                                 <h2>${data.Title}</h2>
                                 <div class="rating">
-                                    <img src="star-icon.svg" alt="star">
+                                    <span class="star" aria-hidden="true">&#9733;</span>
                                     <h4>${data.imdbRating}</h4>
                                 </div>
                                 <div class="details">
